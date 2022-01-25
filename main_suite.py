@@ -232,6 +232,9 @@ class EntryForm(QDialog, form_entry):
             os.mkdir('감정물사진')
             # 하위 폴더가 추가로 필요할 경우 이곳에 추가
             shutil.copyfile(self.root + '/Form/form_Tomato_Tools_18.10_customized.xlsm', new_dir + '/' + self.line_date.date().toString('yyyyMMdd') + "-" + self.line_analyst.text() + "-Tomato-TOTAL.xlsm")
+            shutil.copyfile(self.root + '/Form/form_Tomato_Tools_18.10_customized.xlsm',
+                            new_dir + '/' + self.line_date.date().toString(
+                                'yyyyMMdd') + "-" + self.line_analyst.text() + "-Tomato-Y23.xlsm")
         else:
             QMessageBox.information(self, 'Error', 'Same folder exists')
             return
