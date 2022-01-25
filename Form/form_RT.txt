@@ -1,0 +1,9 @@
+* Block Type = 96alum
+* Chemistry = TAQMAN
+* Experiment File Name =
+* Experiment Run End Time = Not Started
+* Instrument Type = sds7500
+* Passive Reference = MP
+
+[Sample Setup]
+Well	Sample Name	Sample Color	Target Name	Target Color	Task	Reporter	Quencher	Quantity	Comments

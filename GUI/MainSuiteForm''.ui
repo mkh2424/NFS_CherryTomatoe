@@ -1,0 +1,771 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1194</width>
+    <height>907</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainSuite</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>2</x>
+      <y>1</y>
+      <width>1181</width>
+      <height>881</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>4</number>
+    </property>
+    <widget class="QWidget" name="info">
+     <attribute name="title">
+      <string>Info.</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>601</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Profile</string>
+      </property>
+      <widget class="QLineEdit" name="line_analyst">
+       <property name="geometry">
+        <rect>
+         <x>95</x>
+         <y>61</y>
+         <width>161</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>26</x>
+         <y>65</y>
+         <width>56</width>
+         <height>12</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Analyst : </string>
+       </property>
+      </widget>
+      <widget class="QDateEdit" name="line_date">
+       <property name="geometry">
+        <rect>
+         <x>329</x>
+         <y>61</y>
+         <width>161</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="Date">
+       <property name="geometry">
+        <rect>
+         <x>275</x>
+         <y>66</y>
+         <width>56</width>
+         <height>12</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Date : </string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="line_savelocation">
+       <property name="geometry">
+        <rect>
+         <x>115</x>
+         <y>31</y>
+         <width>431</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>25</x>
+         <y>31</y>
+         <width>141</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Save location : </string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>770</y>
+        <width>1151</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>NFIS-related external program</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>130</y>
+        <width>1151</width>
+        <height>621</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Info.</string>
+      </property>
+      <widget class="QTableWidget" name="table_info">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>1131</width>
+         <height>561</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_number_samples">
+       <property name="geometry">
+        <rect>
+         <x>13</x>
+         <y>24</y>
+         <width>191</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Number of samples : </string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_13">
+      <property name="geometry">
+       <rect>
+        <x>630</x>
+        <y>10</y>
+        <width>531</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Control</string>
+      </property>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>40</y>
+         <width>111</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Keyword : </string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="line_search_info">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>38</y>
+         <width>231</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="sheets">
+     <attribute name="title">
+      <string>Sheets</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>641</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Sampling sheets</string>
+      </property>
+      <widget class="QLineEdit" name="line_import_raw_sampling">
+       <property name="geometry">
+        <rect>
+         <x>109</x>
+         <y>27</y>
+         <width>281</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="Import">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>30</y>
+         <width>91</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Imported file : </string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_7">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>10</y>
+        <width>491</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Control - Sample sheets</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_6">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>90</y>
+        <width>1151</width>
+        <height>721</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Sample sheets</string>
+      </property>
+      <widget class="QLabel" name="Import_3">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>41</y>
+         <width>91</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Imported file : </string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="line_import_raw_sample">
+       <property name="geometry">
+        <rect>
+         <x>109</x>
+         <y>40</y>
+         <width>301</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="combo_category">
+       <property name="geometry">
+        <rect>
+         <x>648</x>
+         <y>28</y>
+         <width>351</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="currentText">
+        <string/>
+       </property>
+       <property name="currentIndex">
+        <number>-1</number>
+       </property>
+      </widget>
+      <widget class="QListWidget" name="list_sample_all">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>90</y>
+         <width>461</width>
+         <height>601</height>
+        </rect>
+       </property>
+       <property name="selectionMode">
+        <enum>QAbstractItemView::ExtendedSelection</enum>
+       </property>
+      </widget>
+      <widget class="QListWidget" name="list_sample_partial">
+       <property name="geometry">
+        <rect>
+         <x>660</x>
+         <y>90</y>
+         <width>441</width>
+         <height>601</height>
+        </rect>
+       </property>
+       <property name="selectionMode">
+        <enum>QAbstractItemView::MultiSelection</enum>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>RT-PCR</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox_8">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>30</y>
+        <width>371</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Generate RT sheets</string>
+      </property>
+      <widget class="QRadioButton" name="radio_RT_fromdata">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>33</y>
+         <width>141</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>From Dataframe</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="radio_RT_fromxlsx">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>62</y>
+         <width>141</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>From .xlsx file</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_9">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>30</y>
+        <width>491</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Copy RT data</string>
+      </property>
+      <widget class="QRadioButton" name="radio_RT_todata">
+       <property name="geometry">
+        <rect>
+         <x>114</x>
+         <y>53</y>
+         <width>141</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>To Dataframe</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="radio_RT_toxlsx">
+       <property name="geometry">
+        <rect>
+         <x>115</x>
+         <y>79</y>
+         <width>141</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>To .xlsx file</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="line_import_RT">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>20</y>
+         <width>221</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="Import_2">
+       <property name="geometry">
+        <rect>
+         <x>24</x>
+         <y>25</y>
+         <width>91</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>RT data file : </string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Injection</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox_10">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>371</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Generate injection sheets</string>
+      </property>
+      <widget class="QRadioButton" name="radio_injection_fromdata">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>33</y>
+         <width>141</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>From Dataframe</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="radio_injection_fromxlsx">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>62</y>
+         <width>141</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>From .xlsx file</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>Sub/Re-PCR</string>
+     </attribute>
+     <widget class="QTableWidget" name="table_PCR">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>20</y>
+        <width>681</width>
+        <height>821</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_11">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>20</y>
+        <width>411</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Control</string>
+      </property>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>22</x>
+         <y>113</y>
+         <width>111</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Keyword : </string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="line_search">
+       <property name="geometry">
+        <rect>
+         <x>87</x>
+         <y>112</y>
+         <width>231</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="radio_sub">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>23</y>
+         <width>90</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Sub-PCR</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="radio_re">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>23</y>
+         <width>90</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Re-PCR</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_14">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>348</y>
+        <width>411</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Generate injection sheets</string>
+      </property>
+      <widget class="QRadioButton" name="radio_is_sep">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>33</y>
+         <width>191</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>From Dataframe(seperatly)</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="radio_is_xlsx">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>90</y>
+         <width>141</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>From .xlsx file</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="radio_is_together">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>62</y>
+         <width>191</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>From Dataframe(together)</string>
+       </property>
+       <property name="checked">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_15">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>208</y>
+        <width>411</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Generate sample sheets</string>
+      </property>
+      <widget class="QRadioButton" name="radio_ss_sep">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>33</y>
+         <width>141</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Seperatly</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="radio_ss_together">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>62</y>
+         <width>141</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Together</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>30</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_12">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>495</y>
+        <width>411</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Re-Sampling </string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>combo_category</sender>
+   <signal>currentIndexChanged(QString)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>change_combo_category()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>843</x>
+     <y>161</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>935</x>
+     <y>-17</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>click_btn_NFIS_login()</slot>
+  <slot>click_btn_NFIS_revision_helper()</slot>
+  <slot>click_btn_import_raw_sampling()</slot>
+  <slot>click_btn_print_samplingsheets()</slot>
+  <slot>click_btn_import_modified_sample()</slot>
+  <slot>change_combo_category()</slot>
+  <slot>click_btn_add_category()</slot>
+  <slot>click_btn_remove_category()</slot>
+  <slot>click_btn_move_all()</slot>
+  <slot>click_btn_remove_all()</slot>
+  <slot>click_btn_move()</slot>
+  <slot>click_btn_remove()</slot>
+  <slot>click_btn_generate_samplesheets()</slot>
+  <slot>click_btn_open_savelocation()</slot>
+  <slot>click_btn_generate_RT_sheet()</slot>
+  <slot>click_btn_copy_RT()</slot>
+  <slot>click_btn_import_RT()</slot>
+  <slot>click_btn_change_savelocation()</slot>
+  <slot>click_btn_new()</slot>
+  <slot>click_btn_ok()</slot>
+  <slot>click_btn_load()</slot>
+  <slot>click_btn_generate_injection_sheet()</slot>
+  <slot>click_btn_load_from_dataframe()</slot>
+  <slot>click_btn_update_dataframe()</slot>
+  <slot>click_btn_search()</slot>
+  <slot>click_btn_reset()</slot>
+  <slot>click_btn_generate_samplesheets_secondaryPCR()</slot>
+  <slot>click_btn_generate_injectionsheets_secondaryPCR()</slot>
+  <slot>click_btn_resampling_add()</slot>
+  <slot>click_btn_search_info()</slot>
+ </slots>
+</ui>

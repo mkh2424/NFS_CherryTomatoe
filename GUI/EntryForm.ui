@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>473</width>
+    <height>237</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Entry</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../External/icons8-tomato-100.png</normaloff>../../External/icons8-tomato-100.png</iconset>
+  </property>
+  <widget class="QPushButton" name="btn_new">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>60</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>New</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>19</x>
+     <y>105</y>
+     <width>431</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Profile</string>
+   </property>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>28</x>
+      <y>70</y>
+      <width>56</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Date : </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>26</x>
+      <y>31</y>
+      <width>56</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Analyst : </string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="line_analyst">
+    <property name="geometry">
+     <rect>
+      <x>105</x>
+      <y>27</y>
+      <width>181</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QDateEdit" name="line_date">
+    <property name="geometry">
+     <rect>
+      <x>106</x>
+      <y>64</y>
+      <width>181</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+    <property name="calendarPopup">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_ok">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>20</y>
+      <width>91</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>OK</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLineEdit" name="line_savelocation">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>22</y>
+     <width>231</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>33</x>
+     <y>23</y>
+     <width>91</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Save location : </string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_load">
+   <property name="geometry">
+    <rect>
+     <x>178</x>
+     <y>60</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Load</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_exit">
+   <property name="geometry">
+    <rect>
+     <x>326</x>
+     <y>60</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btn_exit</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>click_btn_exit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>344</x>
+     <y>71</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>443</x>
+     <y>103</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_new</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>click_btn_new()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>101</x>
+     <y>83</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>17</x>
+     <y>46</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_load</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>click_btn_load()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>217</x>
+     <y>73</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>213</x>
+     <y>10</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_ok</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>click_btn_ok()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>368</x>
+     <y>200</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>344</x>
+     <y>2</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>click_btn_change_savelocation()</slot>
+  <slot>click_btn_new()</slot>
+  <slot>click_btn_exit()</slot>
+  <slot>click_btn_ok()</slot>
+  <slot>click_btn_load()</slot>
+ </slots>
+</ui>
