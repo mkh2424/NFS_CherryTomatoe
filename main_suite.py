@@ -436,8 +436,10 @@ class MainSuiteForm(QMainWindow, form_main_suite):
             self.load_reportsheets()
         else:
             self.tabWidget.setTabEnabled(2, False)  # Resample tab 비활성화
-            self.tabWidget.setTabEnabled(3, False)   # Report tab 비활성화
-            self.tabWidget.setTabEnabled(4, False)   # Data tab 비활성화
+            self.tabWidget.setTabEnabled(3, False)   # STR tab 비활성화
+            self.tabWidget.setTabEnabled(4, False)   # Y-STR tab 비활성화
+            self.tabWidget.setTabEnabled(5, False)  # Report tab 비활성화
+            self.tabWidget.setTabEnabled(6, False)  # Data tab 비활성화
         self.exapp = {}
         with open(self.root+"/Settings/External_apps.ini", mode='r') as readfile_exapp: # 외부 프로그램의 위치를 딕셔너리에 저장
             for lines in readfile_exapp:
@@ -660,21 +662,19 @@ class MainSuiteForm(QMainWindow, form_main_suite):
 
     def click_tab_resize(self, num_tab):
         """
-        클릭한 탭이 Report 탭이면 프로그램 창의 크기를 키우고 다른 탭을 누르면 창 크기를 원상복구한다.
+        클릭한 탭이 확장이 필요한 탭이면 프로그램 창의 크기를 키우고 다른 탭을 누르면 창 크기를 원상복구한다.
 
         Parameter
         ---------
         num_tab: int
             클릭한 탭의 번호(순서)
         """
-        if num_tab==3:
-            self.resize(1550, 907)
-            self.tabWidget.resize(1535, 881)
-            self.groupBox_8.resize(1505, 721)
+        if num_tab in [3, 4, 5]:
+            self.resize(1864, 907)
+            self.tabWidget.resize(1851, 881)
         else:
             self.resize(1207, 907)
             self.tabWidget.resize(1191, 881)
-            self.groupBox_8.resize(1161, 721)
 
     def click_btn_open_savelocation(self):
         """
@@ -901,6 +901,8 @@ class MainSuiteForm(QMainWindow, form_main_suite):
         self.tabWidget.setTabEnabled(2, True)  # Resample tab 활성화
         self.tabWidget.setTabEnabled(3, True)   # Report tab 활성화
         self.tabWidget.setTabEnabled(4, True)   # Data tab 활성화
+        self.tabWidget.setTabEnabled(5, True)  # Report tab 활성화
+        self.tabWidget.setTabEnabled(6, True)  # Data tab 활성화
         self.combo_category.addItems(['LCN', 'MF', 'REF'])    # 기본 분류 설정
         for (index, row) in self.ddi_present.df_evidence.iterrows():
             self.list_sample_all.addItem("{index:<10}{case:<15}{evidence}".format(index=index+1, case=row['접수번호'], evidence=row['감정물']))
